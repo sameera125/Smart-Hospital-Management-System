@@ -1,0 +1,75 @@
+.navbar {
+  height: 78px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 28px;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+    
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+
+  box-shadow:
+    0 8px 30px rgba(37,99,235,0.25),
+    0 2px 8px rgba(0,0,0,0.08);
+}
+
+.navbar h2 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 24px;
+}
+
+.navbar p {
+  margin: 4px 0 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.search-bar {
+  background: #f1f5f9;
+  color: #64748b;
+  padding: 11px 16px;
+  border-radius: 14px;
+  width: 260px;
+}
+
+.date-box {
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 11px 16px;
+  border-radius: 14px;
+  font-weight: 600;
+}
+
+.admin-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f8fafc;
+  padding: 8px 12px;
+  border-radius: 18px;
+}
+
+.admin-profile img {
+  width: 38px;
+  height: 38px;
+}
+
+.admin-profile span {
+  display: block;
+  font-weight: 700;
+}
+
+.admin-profile small {
+  color: #64748b;
+}

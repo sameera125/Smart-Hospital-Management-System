@@ -1,0 +1,56 @@
+.advanced-container {
+  padding: 30px;
+}
+
+.advanced-container h1 {
+  color: #0f172a;
+  margin-bottom: 25px;
+}
+
+.advanced-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.advanced-card {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.advanced-card h2 {
+  margin-bottom: 18px;
+  color: #2563eb;
+}
+
+.advanced-card input,
+.advanced-card select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+}
+
+.advanced-card button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.advanced-card button:hover {
+  opacity: 0.9;
+}
+
+@media(max-width: 900px) {
+  .advanced-grid {
+    grid-template-columns: 1fr;
+  }
+}

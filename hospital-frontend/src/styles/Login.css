@@ -1,0 +1,160 @@
+.auth-page,
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+  background:
+    radial-gradient(circle at top left, rgba(37,99,235,0.35), transparent 35%),
+    linear-gradient(135deg, #0f172a, #2563eb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.auth-card,
+.login-box {
+  width: 430px;
+  background: rgba(255, 255, 255, 0.96);
+  padding: 36px;
+  border-radius: 28px;
+  box-shadow: 0 25px 70px rgba(0,0,0,0.28);
+}
+
+.register-card {
+  width: 760px;
+}
+
+.auth-header,
+.login-box {
+  text-align: center;
+}
+
+.auth-header h1,
+.login-box h1 {
+  color: #2563eb;
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.auth-header p,
+.login-box p {
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-box input,
+.register-form input,
+.register-form select,
+.register-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #dbeafe;
+  border-radius: 14px;
+  font-size: 15px;
+  outline: none;
+  background: #ffffff;
+}
+
+.login-box input:focus,
+.register-form input:focus,
+.register-form select:focus,
+.register-form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37,99,235,0.12);
+}
+
+.register-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.register-form textarea {
+  grid-column: span 2;
+  resize: none;
+  height: 80px;
+}
+
+.login-box button,
+.register-form button {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.register-form button {
+  grid-column: span 2;
+}
+
+.login-box button:hover,
+.register-form button:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+.auth-link,
+.register-link {
+  margin-top: 22px;
+  text-align: center;
+  color: #334155;
+}
+
+.auth-link a,
+.register-link a {
+  color: #2563eb;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media(max-width: 800px) {
+  .register-card {
+    width: 95%;
+  }
+
+  .register-form {
+    grid-template-columns: 1fr;
+  }
+
+  .register-form textarea,
+  .register-form button {
+    grid-column: span 1;
+  }
+}
+.role-selector {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.role-selector button {
+  padding: 12px;
+  border: 1px solid #dbeafe;
+  background: #f8fafc;
+  color: #2563eb;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.role-selector .active-role {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  border: none;
+}
+
+.login-hint {
+  margin-top: 18px;
+  color: #64748b;
+}

@@ -1,0 +1,173 @@
+.appointment-form,
+.appointment-list{
+
+
+background:white;
+
+padding:25px;
+
+margin:20px;
+
+border-radius:15px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+
+}
+
+
+
+.appointment-form form{
+
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:15px;
+
+
+}
+
+
+
+.appointment-form input,
+.appointment-form select{
+
+
+padding:12px;
+
+border-radius:10px;
+
+border:1px solid #ddd;
+
+
+}
+
+
+
+.appointment-form button{
+
+
+background:#7c3aed;
+
+color:white;
+
+border:none;
+
+border-radius:10px;
+
+padding:12px;
+
+cursor:pointer;
+
+
+}
+
+
+
+table{
+
+
+width:100%;
+
+border-collapse:collapse;
+
+
+}
+
+
+
+th{
+
+
+background:#7c3aed;
+
+color:white;
+
+padding:12px;
+
+
+}
+
+
+
+td{
+
+
+padding:12px;
+
+border-bottom:1px solid #ddd;
+
+
+}
+
+
+
+.status{
+
+
+background:#dcfce7;
+
+color:green;
+
+padding:6px 15px;
+
+border-radius:20px;
+
+
+}
+
+
+
+.delete-app{
+
+
+background:red;
+
+color:white;
+
+border:none;
+
+padding:8px 15px;
+
+border-radius:8px;
+
+
+}
+.payment-success {
+  background: #dcfce7;
+  color: #15803d;
+  padding: 8px 18px;
+  border-radius: 22px;
+  font-weight: 700;
+}
+
+.approved-status {
+  background: #dbeafe;
+  color: #1d4ed8;
+  padding: 8px 18px;
+  border-radius: 22px;
+  font-weight: 700;
+}
+
+.completed-status {
+  background: #dcfce7;
+  color: #15803d;
+  padding: 8px 18px;
+  border-radius: 22px;
+  font-weight: 700;
+}
+.search-box {
+  width: 360px;
+  padding: 12px 16px;
+  border: 1px solid #dbeafe;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  outline: none;
+}
+.search-box:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.12);
+}

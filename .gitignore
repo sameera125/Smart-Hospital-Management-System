@@ -1,0 +1,6 @@
+hospital-frontend/node_modules/
+hospital-frontend/build/
+
+hospital-backend/target/
+
+*.log

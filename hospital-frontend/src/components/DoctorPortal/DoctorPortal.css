@@ -1,0 +1,182 @@
+.doctor-login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #2563eb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doctor-login-box {
+  width: 420px;
+  background: white;
+  padding: 35px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+}
+
+.doctor-login-box h1 {
+  color: #2563eb;
+}
+
+.doctor-login-box p {
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+.doctor-login-box form {
+  display: grid;
+  gap: 15px;
+}
+
+.doctor-login-box input {
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid #dbeafe;
+}
+
+.doctor-login-box button,
+.doctor-appointment-card button,
+.prescription-form-card button {
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.doctor-portal-page {
+  padding: 35px;
+  min-height: calc(100vh - 78px);
+  background: #f4f7fc;
+}
+
+.doctor-welcome-card {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  padding: 35px;
+  border-radius: 28px;
+  box-shadow: 0 20px 50px rgba(37,99,235,0.25);
+}
+
+.doctor-welcome-card h1 {
+  margin: 0;
+}
+
+.doctor-welcome-card span {
+  display: inline-block;
+  margin-top: 10px;
+  background: rgba(255,255,255,0.2);
+  padding: 10px 18px;
+  border-radius: 20px;
+}
+
+.doctor-action-grid,
+.doctor-appointment-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.doctor-action-card,
+.doctor-appointment-card,
+.prescription-form-card,
+.doctor-empty-box {
+  background: white;
+  padding: 28px;
+  border-radius: 24px;
+  box-shadow: 0 15px 35px rgba(15,23,42,0.08);
+  text-decoration: none;
+  color: #0f172a;
+}
+
+.doctor-action-card h2 {
+  color: #2563eb;
+}
+
+.doctor-action-card p,
+.doctor-appointment-card p {
+  color: #64748b;
+}
+
+.doctor-back-btn {
+  background: #0f172a;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.prescription-form-card {
+  max-width: 750px;
+  margin: auto;
+}
+
+.prescription-form-card form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.prescription-form-card input,
+.prescription-form-card textarea {
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid #dbeafe;
+}
+
+.prescription-form-card textarea {
+  grid-column: span 2;
+  height: 100px;
+}
+
+.prescription-form-card button {
+  grid-column: span 2;
+}
+
+@media(max-width: 900px) {
+  .doctor-action-grid,
+  .doctor-appointment-grid,
+  .prescription-form-card form {
+    grid-template-columns: 1fr;
+  }
+
+  .prescription-form-card textarea,
+  .prescription-form-card button {
+    grid-column: span 1;
+  }
+}
+.active-badge {
+  background: #dbeafe;
+  color: #1d4ed8;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.completed-badge {
+  background: #dcfce7;
+  color: #15803d;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+.active-badge {
+  background: #ffedd5;
+  color: #ea580c;
+  padding: 7px 15px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+.submitted-badge {
+  background: #dcfce7;
+  color: #15803d;
+  padding: 7px 15px;
+  border-radius: 20px;
+  font-weight: 700;
+}
